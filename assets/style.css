@@ -1,0 +1,10 @@
+@font-face {
+  font-family: "Applefont";
+  src: url(fonts/applefont.ttf);
+}
+
+body, html {
+  font-family: "Applefont";
+  background-image: url("images/background tile.png");
+  background-repeat: repeat;
+}
