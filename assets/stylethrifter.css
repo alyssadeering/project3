@@ -1,0 +1,36 @@
+@font-face {
+  font-family: "Applefont";
+  src: url(fonts/applefont.ttf);
+}
+.box {
+  color: black;}
+
+p.post1{
+  vertical-align: right;
+  text-align: right;
+  font-size: 10px;
+
+}
+img.post1 {
+	float: left;
+}
+
+img.post2 {
+	float: left;
+}
+p.post2{
+  vertical-align: right;
+  font-size: 10px
+}
+p.nx{
+  vertical-align: right;
+  font-size: 8px;
+  position: absolute;
+  right: 250px;
+}
+body, html {
+  font-family: "Applefont";
+  background-image: url("images/background tile.png");
+  background-repeat: repeat;
+  color: white;
+}
