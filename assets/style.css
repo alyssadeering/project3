@@ -2,9 +2,32 @@
   font-family: "Applefont";
   src: url(fonts/applefont.ttf);
 }
+.box {
+  color: black;}
+
+p.post1{
+	outline: dashed white;
+	
+}
+img.post1 {
+	vertical-align: middle;
+}
+
+img.post2 {
+	vertical-align:middle;
+}
+p.post2{
+	outline: dashed white;}
+
+img.post3 {
+	vertical-align:middle;
+}
+p.post3{
+	outline: dashed white;}
 
 body, html {
   font-family: "Applefont";
   background-image: url("images/background tile.png");
   background-repeat: repeat;
+  color: white;
 }
