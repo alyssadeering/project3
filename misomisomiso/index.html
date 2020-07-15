@@ -1,11 +1,188 @@
 <html>
+<body>
 <head>
 <meta charset="utf-8">
+
+<style type="text/css">
+.menutitle{
+cursor:pointer;
+margin-bottom: 5px;
+background-color:#ECECFF;
+color:#000000;
+width:140px;
+padding:2px;
+text-align:center;
+font-weight:bold;
+/*/*/border:1px solid #000000;/* */
+}.submenu{
+margin-bottom: 0.5em;
+}
+</style><script type="text/javascript">
+/***********************************************
+***********************************************/var persistmenu="yes" //"yes" or "no". Make sure each SPAN content contains an incrementing ID starting at 1 (id="sub1", id="sub2", etc)
+var persisttype="sitewide" //enter "sitewide" for menu to persist across site, "local" for this page onlyif (document.getElementById){ //DynamicDrive.com change
+document.write('<style type="text/css">n')
+document.write('.submenu{display: none;}n')
+document.write('</style>n')
+}function SwitchMenu(obj){
+if(document.getElementById){
+var el = document.getElementById(obj);
+var ar = document.getElementById("masterdiv").getElementsByTagName("span"); //DynamicDrive.com change
+if(el.style.display != "block"){ //DynamicDrive.com change
+for (var i=0; i<ar.length; i++){
+if (ar[i].className=="submenu") //DynamicDrive.com change
+ar[i].style.display = "none";
+}
+el.style.display = "block";
+}else{
+el.style.display = "none";
+}
+}
+}function get_cookie(Name) {
+var search = Name + "="
+var returnvalue = "";
+if (document.cookie.length > 0) {
+offset = document.cookie.indexOf(search)
+if (offset != -1) {
+offset += search.length
+end = document.cookie.indexOf(";", offset);
+if (end == -1) end = document.cookie.length;
+returnvalue=unescape(document.cookie.substring(offset, end))
+}
+}
+return returnvalue;
+}function onloadfunction(){
+if (persistmenu=="yes"){
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=get_cookie(cookiename)
+if (cookievalue!="")
+document.getElementById(cookievalue).style.display="block"
+}
+}function savemenustate(){
+var inc=1, blockid=""
+while (document.getElementById("sub"+inc)){
+if (document.getElementById("sub"+inc).style.display=="block"){
+blockid="sub"+inc
+break
+}
+inc++
+}
+var cookiename=(persisttype=="sitewide")? "switchmenu" : window.location.pathname
+var cookievalue=(persisttype=="sitewide")? blockid+";path=/" : blockid
+document.cookie=cookiename+"="+cookievalue
+}if (window.addEventListener)
+window.addEventListener("load", onloadfunction, false)
+else if (window.attachEvent)
+window.attachEvent("onload", onloadfunction)
+else if (document.getElementById)
+window.onload=onloadfunctionif (persistmenu=="yes" && document.getElementById)
+window.onunload=savemenustate</script>
+
+
+
 <title>misomisomiso.html</title>
 <!-- external stylesheet starts here -->
 <link rel="stylesheet" type="text/css" href="../assets/style.css">
 </head>
+<style>
+p.recentposts{ text-align: center; outline: dashed black;}
+body{font-family:"Apple ][";
+		background-image: url("Assets/background tile.png");
+		background-repeat: repeat-y,}
+</style>
+
 <body>
-	<h1>hello welcome to my page</h1>
+	<h1>Welcome to the page of: MisoMisoMiso999</h1>
+	<marquee>Member of Myweirdfindz since 1993. Gold member status of finding wierdWEIRDweird stuffz</marquee>
+
+
+	<!-- MisoMisoMiso999 link to homepage-->
+	<div id="masterdiv"><div onclick="SwitchMenu('sub1')">Home</div>
+	<span id="sub1">
+	<a href="///Users/alyssadeering_/Desktop/project3-master/index.html">Home for weirdstuff</a><br>
+	...and more!
+
+	<h2>I am Misomisomiso999 and I enjoy sunsets and long walks on the beach.</h2>
+	<h3>omg its so hard making websites. I think i am going to give up for now...but first, please enjoy my posts.</h3>
+	
+
+<!--below is code for first post -->
+				<table width="500" border="1" cellpadding="5">
+
+			<tr>
+
+			<td align="center" valign="center">
+
+			<img src="file:///Users/alyssadeering_/Desktop/project3-master/assets/images/gummybears.jpg" alt="gummy bears" style="width:300px">
+			Gummy bear organizer case
+
+			<td align="center" valign="center">
+			 MisoMisoMiso999: I finally found a solution for my obsessive desire to organize my gummy bears collection
+			</td>
+
+			</tr>
+
+			</table>
+			 <br>
+			 ...Posted 2 min ago.
+ 			</td>
+			<br>
+
+<!--below is code for second post -->
+
+			<table width="500" border="1" cellpadding="5">
+
+		<tr>
+
+		<td align="center" valign="center">
+
+		<img src="file:///Users/alyssadeering_/Desktop/project3-master/assets/images/newartforhouse.jpg" alt="Toast color chart" style="width:300px">
+		Toast color chart
+
+		<td align="center" valign="center">
+		 MisoMisoMiso999: I have an obsession with the perfect color of toast. I plan to hang this in my kitchen so I will have a chart to get the exact result of toast I desire, but I will trick people into thinking it's art.
+		</td>
+
+		</tr>
+
+		</table>
+		 <br>
+		 ...Posted 4 days ago.
+		</td>
+		<br>
+
+		<!--below is code for third post -->
+
+					<table width="500" border="1" cellpadding="5">
+
+				<tr>
+
+				<td align="center" valign="center">
+
+				<img src="file:///Users/alyssadeering_/Desktop/project3-master/assets/images/mug.jpg" alt="Mustache protection Mug." style="width:300px">
+				Mustache protection mug.
+
+				<td align="center" valign="center">
+				 MisoMisoMiso999: Bought this for tim. TIM, I'm sick of your mustache being soaked with coffee. Come on Tim, get it together.
+				</td>
+
+				</tr>
+
+				</table>
+				 <br>
+				 ...Posted 2 m ago.
+				</td>
+				<br>
+
+
+
+
+
+
+
+
+
+
+
 </body>
 </html>
